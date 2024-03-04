@@ -27,9 +27,9 @@ def  lambda_handler(event,context):
                 print(f"Stopping Instance {instance_id} which has been running for {total_minutes} minutes")
                 ec2.stop_instances(InstanceIds=[instance_id])
             
-            elif uptime.days > 30:
+            elif uptime.days > 30: # If the instance has been running for more than 30 days, terminate it
                 print(f"Terminating Instance {instance_id} which has been running for {uptime.days} days")
                 ec2.terminate_instances(InstanceIds=[instance_id])
-            
-            else:
+             
+            else: # Otherwise, print a message
                 print(f"Instance {instance_id} has been running for {total_minutes} minutes or {uptime.days} days, skipping termination")
