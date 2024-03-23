@@ -45,9 +45,29 @@ Create file 'terraform.tfvars' in the root directory:
 
 Terraform Components:
 
-- Leveraging the AWS provider for seamless resource provisioning.
+- AWS Provider Configuration: Terraform is configured with the AWS provider to provision resources on the AWS platform.
 
-- Deploying EC2 instances, ELB, auto-scaling group, RDS, VPC, subnets, security groups, and more using Terraform to automate infrastructure setup and configuration.
+- Virtual Private Cloud (VPC): The project creates a VPC with a specified CIDR block, enabling isolation and control over the networking environment.
+
+- Internet Gateway (IGW): An internet gateway is attached to the VPC, allowing outbound and inbound internet traffic for resources within the VPC.
+
+- Public and Private Subnets: Public and private subnets are created within the VPC across multiple availability zones (AZs) to distribute resources and enhance fault tolerance.
+
+- Route Tables: Route tables are configured to define routing rules for traffic within the VPC and to external destinations, ensuring proper communication between subnets and the internet.
+
+- Security Groups: Security groups are defined to control inbound and outbound traffic for EC2 instances, ELB, and RDS, enforcing security policies and access control.
+
+- Elastic Load Balancer (ELB): An Application Load Balancer (ALB) is provisioned to evenly distribute incoming traffic across EC2 instances in the Web Tier, improving scalability and fault tolerance.
+
+- Auto Scaling Group (ASG): An Auto Scaling Group is established to manage EC2 instances in the Application Tier, automatically adjusting capacity based on traffic demand and health checks.
+
+- Launch Template: A launch template is defined to specify configuration details for EC2 instances launched within the Auto Scaling Group, ensuring consistency and scalability.
+
+- Amazon RDS Instance: An RDS instance is deployed to provide a managed database solution, facilitating storage and retrieval of application data with reliability and scalability.
+
+- NAT Gateways: NAT Gateways are set up in public subnets to enable private subnet instances to access the internet while maintaining security.
+
+- Elastic IPs (EIPs): Elastic IPs are allocated and associated with NAT Gateways to provide static IP addresses for outbound internet traffic.
 
 
  Terraform Modules:
