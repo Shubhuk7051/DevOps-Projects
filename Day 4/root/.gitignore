@@ -3,5 +3,4 @@
 *.terraform
 *.terraform.lock.hcl
 *.tfvars
-modules/key/demo_key
-modules/key/demo_key.pub
+"D:\Projects\DevOps\Day 4\Architecture.png"
