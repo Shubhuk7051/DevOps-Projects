@@ -1,3 +1,3 @@
 Architecture- 
 
-![Architecture]Day 4/Architecture.png
+![Architecture](https://github.com/Shubhuk7051/DevOps-Projects/blob/master/Day%204/Architecture.png)
