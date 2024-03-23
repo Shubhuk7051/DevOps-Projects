@@ -1,0 +1,7 @@
+*.tfstate
+*.tfstate.backup
+*.terraform
+*.terraform.lock.hcl
+*.tfvars
+modules/key/demo_key
+modules/key/demo_key.pub
