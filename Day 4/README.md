@@ -30,16 +30,16 @@ AWS Services-
 
 Create file 'terraform.tfvars' in the root directory:
 
-  region=""
-  vpc_cidr= ""   
-  pub-sub1-cidr=""
-  pub-sub2-cidr=""
-  pri-sub1-cidr=""
-  pri-sub2-cidr=""
-  data-pri-sub1-cidr=""
-  data-pri-sub2-cidr=""
-  db_username=""
-  db_password=""
+  - region=""
+  - vpc_cidr= ""   
+  - pub-sub1-cidr=""
+  - pub-sub2-cidr=""
+  - pri-sub1-cidr=""
+  - pri-sub2-cidr=""
+  - data-pri-sub1-cidr=""
+  - data-pri-sub2-cidr=""
+  - db_username=""
+  - db_password=""
 
   
 
